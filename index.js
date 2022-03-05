@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-app.get('/api',(req,res) => {
+app.get('/',(req,res) => {
     const { name } = req.query
     res.json({
         name: !name ? "Hi" : `Hi ${name}`,
